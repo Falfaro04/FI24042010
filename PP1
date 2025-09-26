@@ -1,1 +1,21 @@
+import java.util.Scanner;
 
+public class Inverso {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Digite un número natural: ");
+        int numero = sc.nextInt();
+        int inverso = invertir(numero, 0);
+        System.out.println(numero + " = " + inverso);
+        sc.close();
+    }
+
+    public static int invertir(int numero, int acumulado) {
+        if (numero == 0) {
+            return acumulado;
+        }
+        int residuo = numero % 10;
+        int cociente = numero / 10;
+        return invertir(cociente, acumulado * 10 + residuo);
+    }
+          
