@@ -5,6 +5,10 @@
 Freddy Alfaro Alvarez
 FI24042010
 
+
+*** Profe no me dejo subir el archivo en el main, pero esta en el master***
+
+
 - Recursos utilizados
 *https://chatgpt.com/c/68d5d9d2-6a58-8326-a118-90760ee334e4
 
