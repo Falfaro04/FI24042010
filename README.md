@@ -6,7 +6,7 @@ Freddy Alfaro Alvarez
 FI24042010
 
 
-*** Profe no me dejo subir el archivo en el main, pero esta en el master***
+*** Profe no supe como subir el archivo en el main, pero esta en el master***
 
 
 - Recursos utilizados
