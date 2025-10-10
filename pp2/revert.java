@@ -6,8 +6,8 @@ public class revert {
     public static void main(String[] args) throws IOException {
         Stack<Character> pila = new Stack<>();
 
-        File inputFile = new File("input.txt");
-        File outputFile = new File("output.txt");
+        File inputFile = new File("/workspaces/FI24042010/pp2/imput.txt");
+        File outputFile = new File("/workspaces/FI24042010/pp2/output.txt");
 
         if (inputFile.exists()) {
             FileReader lector = new FileReader(inputFile);
