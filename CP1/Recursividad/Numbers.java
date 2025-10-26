@@ -14,6 +14,8 @@ public class Numbers {
         return round(iterative(z, N) / iterative(z, N - 1));
     }
 
+    // https://en.wikipedia.org/wiki/Metallic_mean
+    // Corrección de la función recursiva según especificación
     private static double recursive(double z, double n) {
         if (n == 0 || n == 1) {
             return 1;
@@ -21,6 +23,8 @@ public class Numbers {
         return z * recursive(z, n - 1) + recursive(z, n - 2);
     }
 
+    // Claude
+    // Implementación iterativa del mismo algoritmo
     private static double iterative(double z, double n) {
         if (n == 0 || n == 1) {
             return 1;

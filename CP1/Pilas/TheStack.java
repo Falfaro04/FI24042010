@@ -12,6 +12,8 @@ public class TheStack<Type> implements TheStackInterface<Type> {
         _capacity = capacity;
     }
 
+    // https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+    // Corrección: evitar recursión infinita usando _stack.push en lugar de this.push
     public Boolean push(Type item) {
         var available = _stack.size() < _capacity;
         if (available) {
@@ -20,6 +22,8 @@ public class TheStack<Type> implements TheStackInterface<Type> {
         return available;
     }
 
+    // https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+    // Modificación: retornar null si la pila está vacía
     public Type pop() {
         if (_stack.isEmpty()) {
             return null;
@@ -27,6 +31,8 @@ public class TheStack<Type> implements TheStackInterface<Type> {
         return _stack.pop();
     }
 
+    // https://docs.oracle.com/javase/8/docs/api/java/util/Stack.html
+    // Modificación: retornar null si la pila está vacía
     public Type peek() {
         if (_stack.isEmpty()) {
             return null;

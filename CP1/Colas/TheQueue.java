@@ -14,11 +14,15 @@ public class TheQueue<Type> implements TheQueueInterface<Type> {
     public void enqueue(Type item) {
         _queue.add(item);
     }
-    
+
+    // https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Deque.html
+    // poll() retorna null si está vacía, sin necesidad de condicionales
     public Type dequeue() {
         return _queue.poll();
     }
 
+    // https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/util/Deque.html
+    // peek() retorna null si está vacía, sin necesidad de condicionales
     public Type getFront() {
         return _queue.peek();
     }
@@ -31,13 +35,15 @@ public class TheQueue<Type> implements TheQueueInterface<Type> {
         return _queue.size();
     }
 
+    // Claude
+    // Implementación para generar codones (ternas de nucleótidos)
     public String[] getCodons() {
         var size = _queue.size();
         String[] codons = new String[size / 3];
         
         for (int i = 0; i < codons.length; i++) {
             String codon = "";
-            
+            // Formar una terna (3 nucleótidos)
             for (int j = 0; j < 3; j++) {
                 codon += dequeue();
             }
