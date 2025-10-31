@@ -133,7 +133,7 @@ public class ListDoublyCircular<T> implements ListInterface<T> {
         var arrayDeque = new ArrayDeque<Integer>();
         var random = new Random();
         for (var counter = n * 2; counter > 0; counter--) {
-            var value = random.nextInt(0, 10);
+            var value = random.nextInt(10);
             list.addFirst(value);
             arrayDeque.addFirst(value);
             value = random.nextInt(0, 10);
