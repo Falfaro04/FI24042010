@@ -15,7 +15,7 @@ public class ListDoublyCircular<T> implements ListInterface<T> {
     public void addFirst(T value) {
         NodeDoubly<T> newNode = new NodeDoubly<>(value);
 
-        if (head == null) { // Lista vacía
+        if (head == null) { 
             head = tail = newNode;
             head.next = head.prev = head;
         } else {
@@ -31,7 +31,7 @@ public class ListDoublyCircular<T> implements ListInterface<T> {
     public void addLast(T value) {
         NodeDoubly<T> newNode = new NodeDoubly<>(value);
 
-        if (tail == null) { // Lista vacía
+        if (tail == null) { 
             head = tail = newNode;
             head.next = head.prev = head;
         } else {
@@ -45,13 +45,13 @@ public class ListDoublyCircular<T> implements ListInterface<T> {
 
     @Override
     public T removeFirst() {
-        if (head == null) { // Lista vacía
+        if (head == null) { 
             return null;
         }
 
         T value = head.data;
 
-        if (head == tail) { // Un solo nodo
+        if (head == tail) { 
             head = tail = null;
         } else {
             head = head.next;
@@ -64,13 +64,13 @@ public class ListDoublyCircular<T> implements ListInterface<T> {
 
     @Override
     public T removeLast() {
-        if (tail == null) { // Lista vacía
+        if (tail == null) { 
             return null;
         }
 
         T value = tail.data;
 
-        if (head == tail) { // Un solo nodo
+        if (head == tail) { 
             head = tail = null;
         } else {
             tail = tail.prev;
