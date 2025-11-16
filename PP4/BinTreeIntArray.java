@@ -13,9 +13,7 @@ public class BinTreeIntArray {
         return _tree;
     }
 
-    // =====================
-    //       INSERT
-    // =====================
+  
     public void insert(int value) {
         int index = 0;
 
@@ -32,16 +30,13 @@ public class BinTreeIntArray {
                 if (right >= _tree.length) break;
                 index = right;
             } else {
-                break; // valor duplicado
+                break; 
             }
         }
 
         System.out.println(" ↳ insert: " + value + " → " + Arrays.toString(_tree));
     }
 
-    // =====================
-    //    IN-ORDER (L-R)
-    // =====================
     public void inOrderTraversal() { // left -> root -> right
         System.out.print(" ↳ inOrderTraversal → ");
 
@@ -63,9 +58,7 @@ public class BinTreeIntArray {
         System.out.println();
     }
 
-    // =====================
-    //   PRE-ORDER (R-L)
-    // =====================
+  
     public void preOrderTraversal() { // root -> left -> right
         System.out.print(" ↳ preOrderTraversal → ");
 
@@ -91,9 +84,7 @@ public class BinTreeIntArray {
         System.out.println();
     }
 
-    // =====================
-    //  POST-ORDER (L-R-R)
-    // =====================
+
     public void postOrderTraversal() { // left -> right -> root
         System.out.print(" ↳ postOrderTraversal → ");
 
@@ -125,9 +116,7 @@ public class BinTreeIntArray {
         System.out.println();
     }
 
-    // =====================
-    //        MAIN
-    // =====================
+ 
     public static void main(String[] args) {
         var tree = new BinTreeIntArray(7);
 
@@ -141,8 +130,8 @@ public class BinTreeIntArray {
         tree.insert(3);
 
         System.out.println("\nFull array → " + Arrays.toString(tree.getTree()));
-        tree.inOrderTraversal();      // 1 2 3 4 5 6 7
-        tree.preOrderTraversal();     // 4 2 1 3 6 5 7
-        tree.postOrderTraversal();    // 1 3 2 5 7 6 4
+        tree.inOrderTraversal();     
+        tree.preOrderTraversal();    
+        tree.postOrderTraversal();    
     }
 }
