@@ -9,13 +9,26 @@ public class CustomQueue {
     public void enqueue(int index) {
         var node = new QueueNode(index);
 
-        // Actualizar
+        // ChatGPT - implementación de la cola por lista enlazada simple
+        if (_head == null) {
+            _head = node;
+        } else {
+            QueueNode current = _head;
+            while (current.getNext() != null) {
+                current = current.getNext();
+            }
+            current.setNext(node);
+        }
     }
 
     public int dequeue() {
         var index = -1;
 
-        // Actualizar
+        // ChatGPT - desencolar el primer elemento (frente de la cola)
+        if (_head != null) {
+            index = _head.getIndex();
+            _head = _head.getNext();
+        }
 
         return index;
     }
@@ -23,7 +36,12 @@ public class CustomQueue {
     public int getSize() {
         var size = 0;
 
-        // Actualizar
+        // ChatGPT - recorrer la lista sin modificarla
+        QueueNode current = _head;
+        while (current != null) {
+            size++;
+            current = current.getNext();
+        }
 
         return size;
     }

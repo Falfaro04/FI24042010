@@ -15,10 +15,26 @@ public class CustomGraph {
     }
 
     private void addEdge(char source, char target) {
-        int src = Arrays.binarySearch(_chars, source);
-        int tgt = Arrays.binarySearch(_chars, target);
-        
-        // Actualizar
+
+        // ChatGPT - adyacencia en la matriz
+        int sourceIndex = -1;
+        int targetIndex = -1;
+
+        for (int i = 0; i < _chars.length; i++) {
+            if (_chars[i] == source) {
+                sourceIndex = i;
+            }
+            if (_chars[i] == target) {
+                targetIndex = i;
+            }
+        }
+
+        // Si algún caracter no está, no se registra
+        if (sourceIndex == -1 || targetIndex == -1) {
+            return;
+        }
+
+        _matrix[sourceIndex][targetIndex] = _matrix[sourceIndex][targetIndex] + 1;
     }
 
     public String getMatrix() {

@@ -1,41 +1,56 @@
-public class CustomStack {
+public class CustomQueue {
 
-    private StackNode _head;
+    private QueueNode _head;
 
-    public CustomStack() {
+    public CustomQueue() {
         _head = null;
     }
 
-    public void push(String word) {
-        var node = new StackNode(word);
+    public void enqueue(int index) {
+        var node = new QueueNode(index);
 
-        // Actualizar
-
-        _head = node;
-    }
-
-    public String pop() {
-        String word = null;
-
-        // Actualizar
-
-        return word;
-    }
-
-    public int size() {
-        var length = 0;
-
-        // Actualizar
-
-        return length;
-    }
-
-    public String getWords() {
-        var builder = new StringBuilder("(" + size() + ") [");
-        for (var word = pop(); word != null; word = pop()) {
-            builder.append(" " + word);
+        
+        if (_head == null) {
+            _head = node;
+        } else {
+            QueueNode current = _head;
+            while (current.getNext() != null) {
+                current = current.getNext();
+            }
+            current.setNext(node);
         }
-        builder.append(" ]");
+    }
+
+    public int dequeue() {
+        var index = -1;
+
+       
+        if (_head != null) {
+            index = _head.getIndex();
+            _head = _head.getNext();
+        }
+
+        return index;
+    }
+
+    public int getSize() {
+        var size = 0;
+
+        // ChatGPT - recorrer la lista sin modificarla
+        QueueNode current = _head;
+        while (current != null) {
+            size++;
+            current = current.getNext();
+        }
+
+        return size;
+    }
+
+    public String getIndexes() {
+        var builder = new StringBuilder();
+        for (var index = dequeue(); index > -1; index = dequeue()) {
+            builder.append(" " + index);
+        }
         return builder.toString();
     }
 }
