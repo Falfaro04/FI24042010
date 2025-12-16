@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<partida>
+    <caja/>
+    <mazo>
+        <carta palo="PICAS" valor="9"/>
+        <carta palo="DIAMANTES" valor="6"/>
+        <carta palo="DIAMANTES" valor="13"/>
+        <carta palo="DIAMANTES" valor="3"/>
+        <carta palo="PICAS" valor="6"/>
+        <carta palo="PICAS" valor="8"/>
+        <carta palo="CORAZONES" valor="8"/>
+        <carta palo="CORAZONES" valor="5"/>
+        <carta palo="DIAMANTES" valor="10"/>
+        <carta palo="CORAZONES" valor="12"/>
+        <carta palo="TREBOLES" valor="4"/>
+        <carta palo="TREBOLES" valor="7"/>
+        <carta palo="TREBOLES" valor="10"/>
+        <carta palo="PICAS" valor="12"/>
+        <carta palo="TREBOLES" valor="13"/>
+        <carta palo="DIAMANTES" valor="4"/>
+        <carta palo="CORAZONES" valor="6"/>
+        <carta palo="PICAS" valor="13"/>
+        <carta palo="PICAS" valor="3"/>
+        <carta palo="PICAS" valor="4"/>
+        <carta palo="TREBOLES" valor="3"/>
+        <carta palo="DIAMANTES" valor="1"/>
+        <carta palo="DIAMANTES" valor="9"/>
+        <carta palo="DIAMANTES" valor="2"/>
+        <carta palo="TREBOLES" valor="9"/>
+        <carta palo="DIAMANTES" valor="11"/>
+        <carta palo="TREBOLES" valor="5"/>
+        <carta palo="TREBOLES" valor="11"/>
+        <carta palo="TREBOLES" valor="6"/>
+        <carta palo="PICAS" valor="2"/>
+        <carta palo="PICAS" valor="11"/>
+        <carta palo="CORAZONES" valor="3"/>
+        <carta palo="CORAZONES" valor="2"/>
+        <carta palo="TREBOLES" valor="12"/>
+        <carta palo="PICAS" valor="1"/>
+        <carta palo="PICAS" valor="7"/>
+        <carta palo="CORAZONES" valor="7"/>
+        <carta palo="CORAZONES" valor="10"/>
+        <carta palo="CORAZONES" valor="1"/>
+        <carta palo="DIAMANTES" valor="12"/>
+    </mazo>
+    <mano>
+        <carta palo="CORAZONES" valor="4"/>
+        <carta palo="CORAZONES" valor="9"/>
+        <carta palo="CORAZONES" valor="11"/>
+        <carta palo="DIAMANTES" valor="7"/>
+        <carta palo="DIAMANTES" valor="8"/>
+        <carta palo="PICAS" valor="10"/>
+    </mano>
+    <pozo>
+        <carta palo="CORAZONES" valor="13"/>
+        <carta palo="TREBOLES" valor="1"/>
+        <carta palo="TREBOLES" valor="2"/>
+        <carta palo="PICAS" valor="5"/>
+        <carta palo="TREBOLES" valor="8"/>
+        <carta palo="DIAMANTES" valor="5"/>
+    </pozo>
+</partida>
