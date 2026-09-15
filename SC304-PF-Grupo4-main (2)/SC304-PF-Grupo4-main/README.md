@@ -6,7 +6,7 @@ SC304-PF-Grupo4
 ---
 
 ## Integrantes
-- Kevin Gutiérrez Chinchilla — Carné: FI24039518 — GitHub: @gukevn — Email Git: gukev@gmail. 
+- Kevin Gutiérrez Chinchilla — Carné: FI24039518 — GitHub: @gukevn — Email Git: gukev@gmail.com 
 - FREDDY ALFARO ALVAREZ — Carné: FI24042010 — GitHub: @Falfaro04 — Email Git: freddyprube123@gmail.com
 
 
